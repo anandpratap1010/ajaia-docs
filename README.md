@@ -97,6 +97,7 @@ Frontend: VITE_API_BASE_URL, including the /api/v1 suffix.
 Deploy frontend/ to Vercel and set VITE_API_BASE_URL. Deploy backend/ with its Dockerfile to Render or Railway, attach PostgreSQL, set backend variables, run alembic upgrade head, and allow the exact frontend origin through CORS. Verify /health and then replace placeholders in SUBMISSION.md.
 
 The backend pins Python 3.12.8 through backend/.python-version so Render installs compatible binary database-driver wheels consistently.
+Render-style postgres:// and postgresql:// database URLs are normalized automatically to SQLAlchemy's Psycopg 3 dialect.
 
 ## Known limitations
 
