@@ -90,6 +90,14 @@ Passwords are stored as bcrypt hashes. The documented password is only for dispo
 
 Backend: DATABASE_URL, JWT_SECRET_KEY, JWT_ALGORITHM, ACCESS_TOKEN_EXPIRE_MINUTES, CORS_ORIGINS, and ENVIRONMENT.
 
+For the current deployments, set the Render API service variable exactly as follows (no quotes and no trailing slash):
+
+~~~env
+CORS_ORIGINS=https://ajaia-docs-sigma-eight.vercel.app
+~~~
+
+For multiple allowed clients, use a comma-separated value such as http://localhost:5173,https://ajaia-docs-sigma-eight.vercel.app. Environment changes require a Render redeploy or service restart.
+
 Frontend: VITE_API_BASE_URL, including the /api/v1 suffix.
 
 ## Deployment
