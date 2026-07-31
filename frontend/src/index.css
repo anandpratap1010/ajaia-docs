@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root { font-family: 'DM Sans', system-ui, sans-serif; color: #17211b; background: #f6f7f2; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+h1, h2 { letter-spacing: -.035em; }
+.ProseMirror h1 { font-size: 2rem; font-weight: 700; margin: 1.2rem 0 .6rem; }
+.ProseMirror h2 { font-size: 1.5rem; font-weight: 700; margin: 1rem 0 .5rem; }
+.ProseMirror p { line-height: 1.75; margin: .65rem 0; }
+.ProseMirror ul { list-style: disc; padding-left: 1.5rem; }
+.ProseMirror ol { list-style: decimal; padding-left: 1.5rem; }
+.ProseMirror p.is-editor-empty:first-child::before { color: #a8a29e; content: attr(data-placeholder); float: left; height: 0; pointer-events: none; }
